@@ -1,0 +1,196 @@
+/* Formatacao da Estrutura */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*-=-==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-*/
+
+/*Cabecalho*/
+header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    justify-content: space-between;
+}
+
+header .logo{
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+header .logo a{
+    text-decoration:none;
+    color: #4169e1;
+}
+
+header .logo a :active{
+    color: #4169e1;
+}
+
+/* Componente Menu Principal */
+.caixa-menuprincipal ul {
+    list-style-type: none;
+    padding-right: 1rem;
+}
+
+.caixa-menuprincipal ul li {
+    display: inline-block;
+}
+
+.caixa-menuprincipal ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #0e0e0e;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.caixa-menuprincipal ul li a:hover{
+    background-color: navy;
+}
+
+/*-=-==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-*/
+
+/*Conteudo so site*/
+main{
+    display: flex;
+    margin-left: 17.5rem;
+    padding-top: 6rem;
+    flex-wrap: wrap;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Componente Postagem */
+.caixa-post {
+    margin-bottom: 10px;
+    clear: both;
+    background-color: #0e0e0e;
+    border-radius: .5rem;
+    padding: 1rem;
+    padding-bottom: 2.35rem;
+    width: 45rem;
+    margin-right: 1rem;
+}
+
+.caixa-post img{
+    display: block;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.caixa-post h4{
+    font-size: 70%;
+    color: gray;
+    margin: 5px 0;
+}
+
+.caixa-post h4 span:nth-child(3){
+    background-color: navy;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.curso h2{  
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+.curso p{
+    padding-bottom: .3rem;
+}
+
+.curso h3{
+    padding-top: .8rem;
+    padding-bottom: .3rem;
+}
+
+/*-=-==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-*/
+
+aside{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0%;
+    background-color: #151515;
+    width: 12%;
+    height: 100%;
+    padding-top: 10rem;
+    padding-left: 1rem;
+}
+
+/* Componente Pesquisa */
+.caixa-pesquisa {
+    margin-bottom: 30px;
+}
+
+.caixa-pesquisa .titulo{
+    margin-bottom: .5rem;
+}
+
+.texto-pesquisa{
+    background-color: #0e0e0e;
+    height: 1.5rem;
+}
+
+.caixa-pesquisa button{
+    background-color:#0e0e0e;
+    color:#fff;
+    padding: .3rem;
+    border-radius: .2rem;
+}
+
+/* Componente Categoria */
+.caixa-categoria ul{
+    list-style-type: none;
+    margin-left: 10px;
+    padding-top: .5rem;
+}
+
+.caixa-categoria ul li{
+    padding-bottom: .5rem;
+}
+
+.caixa-categoria ul li a {
+    color: #4169e1;
+    text-decoration: none;
+}
+
+.caixa-categoria ul li a:visited {
+    color: #4169e1;
+}
+
+/*-=-==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-*/
+
+/*Rodape*/
+footer{
+    display: flex;
+    padding-bottom: .5rem;
+    justify-content: center;
+    color: #3a3a3a;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
